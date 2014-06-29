@@ -7,20 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F92796EC1960C2CD00FB24AB /* ScrapsStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E51960C2CD00FB24AB /* ScrapsStatsViewController.swift */; };
-		F92796ED1960C2CD00FB24AB /* ScrapsPullMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E61960C2CD00FB24AB /* ScrapsPullMenuView.swift */; };
-		F92796EE1960C2CD00FB24AB /* ScrapsOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E71960C2CD00FB24AB /* ScrapsOptionsViewController.swift */; };
-		F92796EF1960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E81960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift */; };
-		F92796F01960C2CD00FB24AB /* ScrapsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E91960C2CD00FB24AB /* ScrapsCollectionViewController.swift */; };
-		F92796F11960C2CD00FB24AB /* ScrapsCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796EA1960C2CD00FB24AB /* ScrapsCanvasCell.swift */; };
-		F92796F21960C2CD00FB24AB /* ScrapsAddCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796EB1960C2CD00FB24AB /* ScrapsAddCanvasCell.swift */; };
+		F92796ED1960C2CD00FB24AB /* ScrapsPullMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E61960C2CD00FB24AB /* ScrapsPullMenuView.swift */; settings = {COMPILER_FLAGS = "-objc"; }; };
+		F92796EF1960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E81960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift */; settings = {COMPILER_FLAGS = "-objc"; }; };
+		F92796F01960C2CD00FB24AB /* ScrapsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E91960C2CD00FB24AB /* ScrapsCollectionViewController.swift */; settings = {COMPILER_FLAGS = "-objc"; }; };
+		F92796F11960C2CD00FB24AB /* ScrapsCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796EA1960C2CD00FB24AB /* ScrapsCanvasCell.swift */; settings = {COMPILER_FLAGS = "-objc"; }; };
+		F92796F21960C2CD00FB24AB /* ScrapsAddCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796EB1960C2CD00FB24AB /* ScrapsAddCanvasCell.swift */; settings = {COMPILER_FLAGS = "-objc"; }; };
 		F92796F61960C2DC00FB24AB /* 859-bar-chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92796F31960C2DC00FB24AB /* 859-bar-chart@2x.png */; };
 		F92796F71960C2DC00FB24AB /* 740-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92796F41960C2DC00FB24AB /* 740-gear@2x.png */; };
 		F92796F81960C2DC00FB24AB /* 709-plus-gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92796F51960C2DC00FB24AB /* 709-plus-gray@2x.png */; };
-		F98377C21960BEBE0017C9E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C11960BEBE0017C9E9 /* AppDelegate.swift */; };
+		F98377C21960BEBE0017C9E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C11960BEBE0017C9E9 /* AppDelegate.swift */; settings = {COMPILER_FLAGS = "-objc"; }; };
 		F98377C51960BEBE0017C9E9 /* Scraps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F98377C31960BEBE0017C9E9 /* Scraps.xcdatamodeld */; };
-		F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C61960BEBE0017C9E9 /* ViewController.swift */; };
-		F98377CA1960BEBE0017C9E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98377C81960BEBE0017C9E9 /* Main.storyboard */; };
+		F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C61960BEBE0017C9E9 /* ViewController.swift */; settings = {COMPILER_FLAGS = "-objc"; }; };
 		F98377CC1960BEBE0017C9E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98377CB1960BEBE0017C9E9 /* Images.xcassets */; };
 		F98377D81960BEBE0017C9E9 /* ScrapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377D71960BEBE0017C9E9 /* ScrapsTests.swift */; };
 /* End PBXBuildFile section */
@@ -36,9 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F92796E51960C2CD00FB24AB /* ScrapsStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsStatsViewController.swift; sourceTree = "<group>"; };
 		F92796E61960C2CD00FB24AB /* ScrapsPullMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsPullMenuView.swift; sourceTree = "<group>"; };
-		F92796E71960C2CD00FB24AB /* ScrapsOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsOptionsViewController.swift; sourceTree = "<group>"; };
 		F92796E81960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		F92796E91960C2CD00FB24AB /* ScrapsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsCollectionViewController.swift; sourceTree = "<group>"; };
 		F92796EA1960C2CD00FB24AB /* ScrapsCanvasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsCanvasCell.swift; sourceTree = "<group>"; };
@@ -51,7 +46,6 @@
 		F98377C11960BEBE0017C9E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F98377C41960BEBE0017C9E9 /* Scraps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scraps.xcdatamodel; sourceTree = "<group>"; };
 		F98377C61960BEBE0017C9E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F98377C91960BEBE0017C9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F98377CB1960BEBE0017C9E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F98377D11960BEBE0017C9E9 /* ScrapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98377D61960BEBE0017C9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,15 +91,13 @@
 		F98377BE1960BEBE0017C9E9 /* Scraps */ = {
 			isa = PBXGroup;
 			children = (
-				F92796E51960C2CD00FB24AB /* ScrapsStatsViewController.swift */,
-				F92796E61960C2CD00FB24AB /* ScrapsPullMenuView.swift */,
-				F92796E71960C2CD00FB24AB /* ScrapsOptionsViewController.swift */,
-				F92796E81960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift */,
-				F92796E91960C2CD00FB24AB /* ScrapsCollectionViewController.swift */,
-				F92796EA1960C2CD00FB24AB /* ScrapsCanvasCell.swift */,
-				F92796EB1960C2CD00FB24AB /* ScrapsAddCanvasCell.swift */,
 				F98377C11960BEBE0017C9E9 /* AppDelegate.swift */,
 				F98377C61960BEBE0017C9E9 /* ViewController.swift */,
+				F999428F1960D1CE00242110 /* Options View Controller */,
+				F999428E1960D1AF00242110 /* Collection View Controller */,
+				F99942901960D1DA00242110 /* Stats View Controller */,
+				F99942921960D1F000242110 /* Shared Elements */,
+				F99942911960D1E500242110 /* Transitions */,
 				F98377CB1960BEBE0017C9E9 /* Images.xcassets */,
 				F98377C31960BEBE0017C9E9 /* Scraps.xcdatamodeld */,
 				F98377BF1960BEBE0017C9E9 /* Supporting Files */,
@@ -119,7 +111,6 @@
 				F92796F31960C2DC00FB24AB /* 859-bar-chart@2x.png */,
 				F92796F41960C2DC00FB24AB /* 740-gear@2x.png */,
 				F92796F51960C2DC00FB24AB /* 709-plus-gray@2x.png */,
-				F98377C81960BEBE0017C9E9 /* Main.storyboard */,
 				F98377C01960BEBE0017C9E9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -140,6 +131,46 @@
 				F98377D61960BEBE0017C9E9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F999428E1960D1AF00242110 /* Collection View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F92796E81960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift */,
+				F92796E91960C2CD00FB24AB /* ScrapsCollectionViewController.swift */,
+				F92796EA1960C2CD00FB24AB /* ScrapsCanvasCell.swift */,
+				F92796EB1960C2CD00FB24AB /* ScrapsAddCanvasCell.swift */,
+			);
+			name = "Collection View Controller";
+			sourceTree = "<group>";
+		};
+		F999428F1960D1CE00242110 /* Options View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Options View Controller";
+			sourceTree = "<group>";
+		};
+		F99942901960D1DA00242110 /* Stats View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Stats View Controller";
+			sourceTree = "<group>";
+		};
+		F99942911960D1E500242110 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
+		F99942921960D1F000242110 /* Shared Elements */ = {
+			isa = PBXGroup;
+			children = (
+				F92796E61960C2CD00FB24AB /* ScrapsPullMenuView.swift */,
+			);
+			name = "Shared Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92796F61960C2DC00FB24AB /* 859-bar-chart@2x.png in Resources */,
-				F98377CA1960BEBE0017C9E9 /* Main.storyboard in Resources */,
 				F92796F81960C2DC00FB24AB /* 709-plus-gray@2x.png in Resources */,
 				F98377CC1960BEBE0017C9E9 /* Images.xcassets in Resources */,
 				F92796F71960C2DC00FB24AB /* 740-gear@2x.png in Resources */,
@@ -244,9 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92796EC1960C2CD00FB24AB /* ScrapsStatsViewController.swift in Sources */,
 				F92796EF1960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift in Sources */,
-				F92796EE1960C2CD00FB24AB /* ScrapsOptionsViewController.swift in Sources */,
 				F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */,
 				F92796ED1960C2CD00FB24AB /* ScrapsPullMenuView.swift in Sources */,
 				F92796F21960C2CD00FB24AB /* ScrapsAddCanvasCell.swift in Sources */,
@@ -274,17 +302,6 @@
 			targetProxy = F98377D21960BEBE0017C9E9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F98377C81960BEBE0017C9E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F98377C91960BEBE0017C9E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F98377D91960BEBE0017C9E9 /* Debug */ = {

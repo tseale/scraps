@@ -6,19 +6,21 @@
 //  Copyright (c) 2014 tseale. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTransitioningDelegate {
+	
+	var SCREEN_HEIGHT: CGFloat = CGFloat()
+	var SCREEN_WIDTH: CGFloat = CGFloat()
 	
 	var outerScrollView: UIScrollView = UIScrollView()
 	
 	let pullLeftToRevealStats = ScrapsPullMenuView(direction: "left", imageName: "859-bar-chart@2x.png")
 	let pullRightToRevealOptions = ScrapsPullMenuView(direction: "right", imageName: "740-gear@2x.png")
 	
-	//var optionsViewController = ScrapsOptionsViewController()
 	var collectionViewController = ScrapsCollectionViewController()
-	
-	
+		
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -26,8 +28,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 		self.view.backgroundColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.00)
 		
 		// constants just to store these oft-used values
-		let SCREEN_HEIGHT = self.view.frame.size.height
-		let SCREEN_WIDTH = self.view.frame.size.width
+		SCREEN_HEIGHT = self.view.frame.size.height
+		SCREEN_WIDTH = self.view.frame.size.width
 		
 		// scrollview to allow for pull to side interactions
 		outerScrollView = UIScrollView(frame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT))
@@ -43,10 +45,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 		collectionViewController.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
 		// add the collection view controller to parent
 		self.addChildViewController(collectionViewController)
-		
-		//optionsViewController.transitioningDelegate = self;
-		//optionsViewController.modalPresentationStyle = UIModalPresentationStyle.FullScreen
-		//self.addChildViewController(optionsViewController)
 		
 		
 		// add views for pull controls to outer scroll view
@@ -83,7 +81,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 		pullRightToRevealOptions.updateProgressCircle()
 		pullLeftToRevealStats.updateProgressCircle()
 	}
-	
 	
 }
 
