@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F91543341960BF5F00B05FCE /* 709-plus-gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F91543311960BF5F00B05FCE /* 709-plus-gray@2x.png */; };
-		F91543351960BF5F00B05FCE /* 740-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F91543321960BF5F00B05FCE /* 740-gear@2x.png */; };
-		F91543361960BF5F00B05FCE /* 859-bar-chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F91543331960BF5F00B05FCE /* 859-bar-chart@2x.png */; };
-		F915433D1960BF9400B05FCE /* ScrapsPullMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91543371960BF9400B05FCE /* ScrapsPullMenuView.swift */; };
-		F915433E1960BF9400B05FCE /* ScrapsOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91543381960BF9400B05FCE /* ScrapsOptionsViewController.swift */; };
-		F915433F1960BF9400B05FCE /* ScrapsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91543391960BF9400B05FCE /* ScrapsCollectionViewController.swift */; };
-		F91543401960BF9400B05FCE /* ScrapsCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915433A1960BF9400B05FCE /* ScrapsCanvasCell.swift */; };
-		F91543411960BF9400B05FCE /* ScrapsAddCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915433B1960BF9400B05FCE /* ScrapsAddCanvasCell.swift */; };
-		F91543421960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915433C1960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift */; };
-		F91543441960BFA700B05FCE /* ScrapsStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91543431960BFA700B05FCE /* ScrapsStatsViewController.swift */; };
+		F92796EC1960C2CD00FB24AB /* ScrapsStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E51960C2CD00FB24AB /* ScrapsStatsViewController.swift */; };
+		F92796ED1960C2CD00FB24AB /* ScrapsPullMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E61960C2CD00FB24AB /* ScrapsPullMenuView.swift */; };
+		F92796EE1960C2CD00FB24AB /* ScrapsOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E71960C2CD00FB24AB /* ScrapsOptionsViewController.swift */; };
+		F92796EF1960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E81960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift */; };
+		F92796F01960C2CD00FB24AB /* ScrapsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796E91960C2CD00FB24AB /* ScrapsCollectionViewController.swift */; };
+		F92796F11960C2CD00FB24AB /* ScrapsCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796EA1960C2CD00FB24AB /* ScrapsCanvasCell.swift */; };
+		F92796F21960C2CD00FB24AB /* ScrapsAddCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92796EB1960C2CD00FB24AB /* ScrapsAddCanvasCell.swift */; };
+		F92796F61960C2DC00FB24AB /* 859-bar-chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92796F31960C2DC00FB24AB /* 859-bar-chart@2x.png */; };
+		F92796F71960C2DC00FB24AB /* 740-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92796F41960C2DC00FB24AB /* 740-gear@2x.png */; };
+		F92796F81960C2DC00FB24AB /* 709-plus-gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F92796F51960C2DC00FB24AB /* 709-plus-gray@2x.png */; };
 		F98377C21960BEBE0017C9E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C11960BEBE0017C9E9 /* AppDelegate.swift */; };
 		F98377C51960BEBE0017C9E9 /* Scraps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F98377C31960BEBE0017C9E9 /* Scraps.xcdatamodeld */; };
 		F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C61960BEBE0017C9E9 /* ViewController.swift */; };
@@ -36,16 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F91543311960BF5F00B05FCE /* 709-plus-gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "709-plus-gray@2x.png"; path = "../../../Documents/github/scraps/Scraps/Scraps/709-plus-gray@2x.png"; sourceTree = "<group>"; };
-		F91543321960BF5F00B05FCE /* 740-gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear@2x.png"; path = "../../../Documents/github/scraps/Scraps/Scraps/740-gear@2x.png"; sourceTree = "<group>"; };
-		F91543331960BF5F00B05FCE /* 859-bar-chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "859-bar-chart@2x.png"; path = "../../../Documents/github/scraps/Scraps/Scraps/859-bar-chart@2x.png"; sourceTree = "<group>"; };
-		F91543371960BF9400B05FCE /* ScrapsPullMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsPullMenuView.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsPullMenuView.swift; sourceTree = "<group>"; };
-		F91543381960BF9400B05FCE /* ScrapsOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsOptionsViewController.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsOptionsViewController.swift; sourceTree = "<group>"; };
-		F91543391960BF9400B05FCE /* ScrapsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsCollectionViewController.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsCollectionViewController.swift; sourceTree = "<group>"; };
-		F915433A1960BF9400B05FCE /* ScrapsCanvasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsCanvasCell.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsCanvasCell.swift; sourceTree = "<group>"; };
-		F915433B1960BF9400B05FCE /* ScrapsAddCanvasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsAddCanvasCell.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsAddCanvasCell.swift; sourceTree = "<group>"; };
-		F915433C1960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsCollectionViewFlowLayout.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		F91543431960BFA700B05FCE /* ScrapsStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsStatsViewController.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsStatsViewController.swift; sourceTree = "<group>"; };
+		F92796E51960C2CD00FB24AB /* ScrapsStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsStatsViewController.swift; sourceTree = "<group>"; };
+		F92796E61960C2CD00FB24AB /* ScrapsPullMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsPullMenuView.swift; sourceTree = "<group>"; };
+		F92796E71960C2CD00FB24AB /* ScrapsOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsOptionsViewController.swift; sourceTree = "<group>"; };
+		F92796E81960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		F92796E91960C2CD00FB24AB /* ScrapsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsCollectionViewController.swift; sourceTree = "<group>"; };
+		F92796EA1960C2CD00FB24AB /* ScrapsCanvasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsCanvasCell.swift; sourceTree = "<group>"; };
+		F92796EB1960C2CD00FB24AB /* ScrapsAddCanvasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsAddCanvasCell.swift; sourceTree = "<group>"; };
+		F92796F31960C2DC00FB24AB /* 859-bar-chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "859-bar-chart@2x.png"; sourceTree = "<group>"; };
+		F92796F41960C2DC00FB24AB /* 740-gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear@2x.png"; sourceTree = "<group>"; };
+		F92796F51960C2DC00FB24AB /* 709-plus-gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "709-plus-gray@2x.png"; sourceTree = "<group>"; };
 		F98377BC1960BEBE0017C9E9 /* Scraps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scraps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98377C01960BEBE0017C9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F98377C11960BEBE0017C9E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,13 +97,13 @@
 		F98377BE1960BEBE0017C9E9 /* Scraps */ = {
 			isa = PBXGroup;
 			children = (
-				F91543431960BFA700B05FCE /* ScrapsStatsViewController.swift */,
-				F91543371960BF9400B05FCE /* ScrapsPullMenuView.swift */,
-				F91543381960BF9400B05FCE /* ScrapsOptionsViewController.swift */,
-				F91543391960BF9400B05FCE /* ScrapsCollectionViewController.swift */,
-				F915433A1960BF9400B05FCE /* ScrapsCanvasCell.swift */,
-				F915433B1960BF9400B05FCE /* ScrapsAddCanvasCell.swift */,
-				F915433C1960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift */,
+				F92796E51960C2CD00FB24AB /* ScrapsStatsViewController.swift */,
+				F92796E61960C2CD00FB24AB /* ScrapsPullMenuView.swift */,
+				F92796E71960C2CD00FB24AB /* ScrapsOptionsViewController.swift */,
+				F92796E81960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift */,
+				F92796E91960C2CD00FB24AB /* ScrapsCollectionViewController.swift */,
+				F92796EA1960C2CD00FB24AB /* ScrapsCanvasCell.swift */,
+				F92796EB1960C2CD00FB24AB /* ScrapsAddCanvasCell.swift */,
 				F98377C11960BEBE0017C9E9 /* AppDelegate.swift */,
 				F98377C61960BEBE0017C9E9 /* ViewController.swift */,
 				F98377CB1960BEBE0017C9E9 /* Images.xcassets */,
@@ -116,9 +116,9 @@
 		F98377BF1960BEBE0017C9E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F91543311960BF5F00B05FCE /* 709-plus-gray@2x.png */,
-				F91543321960BF5F00B05FCE /* 740-gear@2x.png */,
-				F91543331960BF5F00B05FCE /* 859-bar-chart@2x.png */,
+				F92796F31960C2DC00FB24AB /* 859-bar-chart@2x.png */,
+				F92796F41960C2DC00FB24AB /* 740-gear@2x.png */,
+				F92796F51960C2DC00FB24AB /* 709-plus-gray@2x.png */,
 				F98377C81960BEBE0017C9E9 /* Main.storyboard */,
 				F98377C01960BEBE0017C9E9 /* Info.plist */,
 			);
@@ -222,11 +222,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91543341960BF5F00B05FCE /* 709-plus-gray@2x.png in Resources */,
-				F91543361960BF5F00B05FCE /* 859-bar-chart@2x.png in Resources */,
+				F92796F61960C2DC00FB24AB /* 859-bar-chart@2x.png in Resources */,
 				F98377CA1960BEBE0017C9E9 /* Main.storyboard in Resources */,
+				F92796F81960C2DC00FB24AB /* 709-plus-gray@2x.png in Resources */,
 				F98377CC1960BEBE0017C9E9 /* Images.xcassets in Resources */,
-				F91543351960BF5F00B05FCE /* 740-gear@2x.png in Resources */,
+				F92796F71960C2DC00FB24AB /* 740-gear@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,15 +244,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F91543421960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift in Sources */,
-				F915433D1960BF9400B05FCE /* ScrapsPullMenuView.swift in Sources */,
+				F92796EC1960C2CD00FB24AB /* ScrapsStatsViewController.swift in Sources */,
+				F92796EF1960C2CD00FB24AB /* ScrapsCollectionViewFlowLayout.swift in Sources */,
+				F92796EE1960C2CD00FB24AB /* ScrapsOptionsViewController.swift in Sources */,
 				F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */,
-				F915433F1960BF9400B05FCE /* ScrapsCollectionViewController.swift in Sources */,
-				F91543441960BFA700B05FCE /* ScrapsStatsViewController.swift in Sources */,
-				F915433E1960BF9400B05FCE /* ScrapsOptionsViewController.swift in Sources */,
+				F92796ED1960C2CD00FB24AB /* ScrapsPullMenuView.swift in Sources */,
+				F92796F21960C2CD00FB24AB /* ScrapsAddCanvasCell.swift in Sources */,
 				F98377C21960BEBE0017C9E9 /* AppDelegate.swift in Sources */,
-				F91543411960BF9400B05FCE /* ScrapsAddCanvasCell.swift in Sources */,
-				F91543401960BF9400B05FCE /* ScrapsCanvasCell.swift in Sources */,
+				F92796F11960C2CD00FB24AB /* ScrapsCanvasCell.swift in Sources */,
+				F92796F01960C2CD00FB24AB /* ScrapsCollectionViewController.swift in Sources */,
 				F98377C51960BEBE0017C9E9 /* Scraps.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
