@@ -20,6 +20,8 @@
 		F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C61960BEBE0017C9E9 /* ViewController.swift */; settings = {COMPILER_FLAGS = "-objc"; }; };
 		F98377CC1960BEBE0017C9E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98377CB1960BEBE0017C9E9 /* Images.xcassets */; };
 		F98377D81960BEBE0017C9E9 /* ScrapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377D71960BEBE0017C9E9 /* ScrapsTests.swift */; };
+		F99942941960D2DB00242110 /* ScrapsOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99942931960D2DB00242110 /* ScrapsOptionsViewController.swift */; };
+		F99942961960D31200242110 /* ScrapsStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99942951960D31200242110 /* ScrapsStatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		F98377D11960BEBE0017C9E9 /* ScrapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98377D61960BEBE0017C9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F98377D71960BEBE0017C9E9 /* ScrapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapsTests.swift; sourceTree = "<group>"; };
+		F99942931960D2DB00242110 /* ScrapsOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsOptionsViewController.swift; sourceTree = "<group>"; };
+		F99942951960D31200242110 /* ScrapsStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrapsStatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 		F999428F1960D1CE00242110 /* Options View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F99942931960D2DB00242110 /* ScrapsOptionsViewController.swift */,
 			);
 			name = "Options View Controller";
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 		F99942901960D1DA00242110 /* Stats View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F99942951960D31200242110 /* ScrapsStatsViewController.swift */,
 			);
 			name = "Stats View Controller";
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 				F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */,
 				F92796ED1960C2CD00FB24AB /* ScrapsPullMenuView.swift in Sources */,
 				F92796F21960C2CD00FB24AB /* ScrapsAddCanvasCell.swift in Sources */,
+				F99942961960D31200242110 /* ScrapsStatsViewController.swift in Sources */,
+				F99942941960D2DB00242110 /* ScrapsOptionsViewController.swift in Sources */,
 				F98377C21960BEBE0017C9E9 /* AppDelegate.swift in Sources */,
 				F92796F11960C2CD00FB24AB /* ScrapsCanvasCell.swift in Sources */,
 				F92796F01960C2CD00FB24AB /* ScrapsCollectionViewController.swift in Sources */,

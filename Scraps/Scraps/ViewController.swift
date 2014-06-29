@@ -19,7 +19,9 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 	let pullLeftToRevealStats = ScrapsPullMenuView(direction: "left", imageName: "859-bar-chart@2x.png")
 	let pullRightToRevealOptions = ScrapsPullMenuView(direction: "right", imageName: "740-gear@2x.png")
 	
+	var optionsViewController = ScrapsOptionsViewController()
 	var collectionViewController = ScrapsCollectionViewController()
+	var statsViewController = ScrapsStatsViewController()
 		
 	override func viewDidLoad() {
 		super.viewDidLoad()
