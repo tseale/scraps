@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F91543341960BF5F00B05FCE /* 709-plus-gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F91543311960BF5F00B05FCE /* 709-plus-gray@2x.png */; };
+		F91543351960BF5F00B05FCE /* 740-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F91543321960BF5F00B05FCE /* 740-gear@2x.png */; };
+		F91543361960BF5F00B05FCE /* 859-bar-chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F91543331960BF5F00B05FCE /* 859-bar-chart@2x.png */; };
+		F915433D1960BF9400B05FCE /* ScrapsPullMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91543371960BF9400B05FCE /* ScrapsPullMenuView.swift */; };
+		F915433E1960BF9400B05FCE /* ScrapsOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91543381960BF9400B05FCE /* ScrapsOptionsViewController.swift */; };
+		F915433F1960BF9400B05FCE /* ScrapsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91543391960BF9400B05FCE /* ScrapsCollectionViewController.swift */; };
+		F91543401960BF9400B05FCE /* ScrapsCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915433A1960BF9400B05FCE /* ScrapsCanvasCell.swift */; };
+		F91543411960BF9400B05FCE /* ScrapsAddCanvasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915433B1960BF9400B05FCE /* ScrapsAddCanvasCell.swift */; };
+		F91543421960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F915433C1960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift */; };
+		F91543441960BFA700B05FCE /* ScrapsStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91543431960BFA700B05FCE /* ScrapsStatsViewController.swift */; };
+		F98377C21960BEBE0017C9E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C11960BEBE0017C9E9 /* AppDelegate.swift */; };
+		F98377C51960BEBE0017C9E9 /* Scraps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F98377C31960BEBE0017C9E9 /* Scraps.xcdatamodeld */; };
+		F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377C61960BEBE0017C9E9 /* ViewController.swift */; };
+		F98377CA1960BEBE0017C9E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98377C81960BEBE0017C9E9 /* Main.storyboard */; };
+		F98377CC1960BEBE0017C9E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98377CB1960BEBE0017C9E9 /* Images.xcassets */; };
+		F98377D81960BEBE0017C9E9 /* ScrapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98377D71960BEBE0017C9E9 /* ScrapsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F98377D21960BEBE0017C9E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F98377B41960BEBE0017C9E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F98377BB1960BEBE0017C9E9;
+			remoteInfo = Scraps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F91543311960BF5F00B05FCE /* 709-plus-gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "709-plus-gray@2x.png"; path = "../../../Documents/github/scraps/Scraps/Scraps/709-plus-gray@2x.png"; sourceTree = "<group>"; };
+		F91543321960BF5F00B05FCE /* 740-gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "740-gear@2x.png"; path = "../../../Documents/github/scraps/Scraps/Scraps/740-gear@2x.png"; sourceTree = "<group>"; };
+		F91543331960BF5F00B05FCE /* 859-bar-chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "859-bar-chart@2x.png"; path = "../../../Documents/github/scraps/Scraps/Scraps/859-bar-chart@2x.png"; sourceTree = "<group>"; };
+		F91543371960BF9400B05FCE /* ScrapsPullMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsPullMenuView.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsPullMenuView.swift; sourceTree = "<group>"; };
+		F91543381960BF9400B05FCE /* ScrapsOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsOptionsViewController.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsOptionsViewController.swift; sourceTree = "<group>"; };
+		F91543391960BF9400B05FCE /* ScrapsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsCollectionViewController.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsCollectionViewController.swift; sourceTree = "<group>"; };
+		F915433A1960BF9400B05FCE /* ScrapsCanvasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsCanvasCell.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsCanvasCell.swift; sourceTree = "<group>"; };
+		F915433B1960BF9400B05FCE /* ScrapsAddCanvasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsAddCanvasCell.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsAddCanvasCell.swift; sourceTree = "<group>"; };
+		F915433C1960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsCollectionViewFlowLayout.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		F91543431960BFA700B05FCE /* ScrapsStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrapsStatsViewController.swift; path = ../../../Documents/github/scraps/Scraps/Scraps/ScrapsStatsViewController.swift; sourceTree = "<group>"; };
+		F98377BC1960BEBE0017C9E9 /* Scraps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scraps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98377C01960BEBE0017C9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98377C11960BEBE0017C9E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F98377C41960BEBE0017C9E9 /* Scraps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scraps.xcdatamodel; sourceTree = "<group>"; };
+		F98377C61960BEBE0017C9E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F98377C91960BEBE0017C9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F98377CB1960BEBE0017C9E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F98377D11960BEBE0017C9E9 /* ScrapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98377D61960BEBE0017C9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98377D71960BEBE0017C9E9 /* ScrapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F98377B91960BEBE0017C9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98377CE1960BEBE0017C9E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F98377B31960BEBE0017C9E9 = {
+			isa = PBXGroup;
+			children = (
+				F98377BE1960BEBE0017C9E9 /* Scraps */,
+				F98377D41960BEBE0017C9E9 /* ScrapsTests */,
+				F98377BD1960BEBE0017C9E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F98377BD1960BEBE0017C9E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F98377BC1960BEBE0017C9E9 /* Scraps.app */,
+				F98377D11960BEBE0017C9E9 /* ScrapsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F98377BE1960BEBE0017C9E9 /* Scraps */ = {
+			isa = PBXGroup;
+			children = (
+				F91543431960BFA700B05FCE /* ScrapsStatsViewController.swift */,
+				F91543371960BF9400B05FCE /* ScrapsPullMenuView.swift */,
+				F91543381960BF9400B05FCE /* ScrapsOptionsViewController.swift */,
+				F91543391960BF9400B05FCE /* ScrapsCollectionViewController.swift */,
+				F915433A1960BF9400B05FCE /* ScrapsCanvasCell.swift */,
+				F915433B1960BF9400B05FCE /* ScrapsAddCanvasCell.swift */,
+				F915433C1960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift */,
+				F98377C11960BEBE0017C9E9 /* AppDelegate.swift */,
+				F98377C61960BEBE0017C9E9 /* ViewController.swift */,
+				F98377CB1960BEBE0017C9E9 /* Images.xcassets */,
+				F98377C31960BEBE0017C9E9 /* Scraps.xcdatamodeld */,
+				F98377BF1960BEBE0017C9E9 /* Supporting Files */,
+			);
+			path = Scraps;
+			sourceTree = "<group>";
+		};
+		F98377BF1960BEBE0017C9E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F91543311960BF5F00B05FCE /* 709-plus-gray@2x.png */,
+				F91543321960BF5F00B05FCE /* 740-gear@2x.png */,
+				F91543331960BF5F00B05FCE /* 859-bar-chart@2x.png */,
+				F98377C81960BEBE0017C9E9 /* Main.storyboard */,
+				F98377C01960BEBE0017C9E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F98377D41960BEBE0017C9E9 /* ScrapsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F98377D71960BEBE0017C9E9 /* ScrapsTests.swift */,
+				F98377D51960BEBE0017C9E9 /* Supporting Files */,
+			);
+			path = ScrapsTests;
+			sourceTree = "<group>";
+		};
+		F98377D51960BEBE0017C9E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F98377D61960BEBE0017C9E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F98377BB1960BEBE0017C9E9 /* Scraps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98377DB1960BEBE0017C9E9 /* Build configuration list for PBXNativeTarget "Scraps" */;
+			buildPhases = (
+				F98377B81960BEBE0017C9E9 /* Sources */,
+				F98377B91960BEBE0017C9E9 /* Frameworks */,
+				F98377BA1960BEBE0017C9E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scraps;
+			productName = Scraps;
+			productReference = F98377BC1960BEBE0017C9E9 /* Scraps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F98377D01960BEBE0017C9E9 /* ScrapsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98377DE1960BEBE0017C9E9 /* Build configuration list for PBXNativeTarget "ScrapsTests" */;
+			buildPhases = (
+				F98377CD1960BEBE0017C9E9 /* Sources */,
+				F98377CE1960BEBE0017C9E9 /* Frameworks */,
+				F98377CF1960BEBE0017C9E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F98377D31960BEBE0017C9E9 /* PBXTargetDependency */,
+			);
+			name = ScrapsTests;
+			productName = ScrapsTests;
+			productReference = F98377D11960BEBE0017C9E9 /* ScrapsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F98377B41960BEBE0017C9E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = tseale;
+				TargetAttributes = {
+					F98377BB1960BEBE0017C9E9 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F98377D01960BEBE0017C9E9 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F98377BB1960BEBE0017C9E9;
+					};
+				};
+			};
+			buildConfigurationList = F98377B71960BEBE0017C9E9 /* Build configuration list for PBXProject "Scraps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F98377B31960BEBE0017C9E9;
+			productRefGroup = F98377BD1960BEBE0017C9E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F98377BB1960BEBE0017C9E9 /* Scraps */,
+				F98377D01960BEBE0017C9E9 /* ScrapsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F98377BA1960BEBE0017C9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91543341960BF5F00B05FCE /* 709-plus-gray@2x.png in Resources */,
+				F91543361960BF5F00B05FCE /* 859-bar-chart@2x.png in Resources */,
+				F98377CA1960BEBE0017C9E9 /* Main.storyboard in Resources */,
+				F98377CC1960BEBE0017C9E9 /* Images.xcassets in Resources */,
+				F91543351960BF5F00B05FCE /* 740-gear@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98377CF1960BEBE0017C9E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F98377B81960BEBE0017C9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91543421960BF9400B05FCE /* ScrapsCollectionViewFlowLayout.swift in Sources */,
+				F915433D1960BF9400B05FCE /* ScrapsPullMenuView.swift in Sources */,
+				F98377C71960BEBE0017C9E9 /* ViewController.swift in Sources */,
+				F915433F1960BF9400B05FCE /* ScrapsCollectionViewController.swift in Sources */,
+				F91543441960BFA700B05FCE /* ScrapsStatsViewController.swift in Sources */,
+				F915433E1960BF9400B05FCE /* ScrapsOptionsViewController.swift in Sources */,
+				F98377C21960BEBE0017C9E9 /* AppDelegate.swift in Sources */,
+				F91543411960BF9400B05FCE /* ScrapsAddCanvasCell.swift in Sources */,
+				F91543401960BF9400B05FCE /* ScrapsCanvasCell.swift in Sources */,
+				F98377C51960BEBE0017C9E9 /* Scraps.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98377CD1960BEBE0017C9E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98377D81960BEBE0017C9E9 /* ScrapsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F98377D31960BEBE0017C9E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F98377BB1960BEBE0017C9E9 /* Scraps */;
+			targetProxy = F98377D21960BEBE0017C9E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F98377C81960BEBE0017C9E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F98377C91960BEBE0017C9E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F98377D91960BEBE0017C9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F98377DA1960BEBE0017C9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F98377DC1960BEBE0017C9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Scraps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F98377DD1960BEBE0017C9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Scraps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F98377DF1960BEBE0017C9E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Scraps.app/Scraps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScrapsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		F98377E01960BEBE0017C9E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Scraps.app/Scraps";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScrapsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F98377B71960BEBE0017C9E9 /* Build configuration list for PBXProject "Scraps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98377D91960BEBE0017C9E9 /* Debug */,
+				F98377DA1960BEBE0017C9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98377DB1960BEBE0017C9E9 /* Build configuration list for PBXNativeTarget "Scraps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98377DC1960BEBE0017C9E9 /* Debug */,
+				F98377DD1960BEBE0017C9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98377DE1960BEBE0017C9E9 /* Build configuration list for PBXNativeTarget "ScrapsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98377DF1960BEBE0017C9E9 /* Debug */,
+				F98377E01960BEBE0017C9E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F98377C31960BEBE0017C9E9 /* Scraps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F98377C41960BEBE0017C9E9 /* Scraps.xcdatamodel */,
+			);
+			currentVersion = F98377C41960BEBE0017C9E9 /* Scraps.xcdatamodel */;
+			path = Scraps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F98377B41960BEBE0017C9E9 /* Project object */;
+}
