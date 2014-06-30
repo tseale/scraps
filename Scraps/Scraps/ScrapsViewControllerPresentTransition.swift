@@ -12,7 +12,7 @@ import UIKit
 class ScrapsViewControllerPresentTransition: NSObject, UIViewControllerAnimatedTransitioning {
 	
 	func transitionDuration(transitionContext: UIViewControllerContextTransitioning!) -> NSTimeInterval {
-		return 2.0
+		return 0.6
 	}
 	
 	func animateTransition(transitionContext: UIViewControllerContextTransitioning!) {

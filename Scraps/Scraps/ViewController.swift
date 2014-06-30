@@ -9,15 +9,34 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTransitioningDelegate {
-	
-	var SCREEN_HEIGHT: CGFloat = CGFloat()
-	var SCREEN_WIDTH: CGFloat = CGFloat()
+class ViewController: UIViewController, UIScrollViewDelegate {
 	
 	var outerScrollView: UIScrollView = UIScrollView()
 	
-	let pullLeftToRevealStats = ScrapsPullMenuView(direction: "left", imageName: "859-bar-chart@2x.png")
-	let pullRightToRevealOptions = ScrapsPullMenuView(direction: "right", imageName: "740-gear@2x.png")
+	var optionsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsOptionsViewController(), leftImage: nil, rightImage: nil)
+	var collectionViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsCollectionViewController(collectionViewLayout: ScrapsCollectionViewFlowLayout()), leftImage: nil, rightImage: nil)
+	var statsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsStatsViewController(), leftImage: nil, rightImage: nil)
+	
+	override func viewDidLoad() {
+		outerScrollView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
+		outerScrollView.contentSize = CGSizeMake(3*SCREEN_WIDTH, SCREEN_HEIGHT)
+		outerScrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0)
+		outerScrollView.alwaysBounceHorizontal = false
+		outerScrollView.scrollEnabled = false
+		outerScrollView.pagingEnabled = true
+		
+		optionsViewController.view.frame.origin = CGPointMake(0, 0)
+		collectionViewController.view.frame.origin = CGPointMake(SCREEN_WIDTH, 0)
+		statsViewController.view.frame.origin = CGPointMake(2*SCREEN_WIDTH, 0)
+		outerScrollView.addSubview(optionsViewController.view)
+		outerScrollView.addSubview(collectionViewController.view)
+		outerScrollView.addSubview(statsViewController.view)
+		self.view.addSubview(outerScrollView)
+	}
+	
+	/*
+	//let pullLeftToRevealStats = ScrapsPullMenuView(direction: "left", imageName: "859-bar-chart@2x.png")
+	//let pullRightToRevealOptions = ScrapsPullMenuView(direction: "right", imageName: "740-gear@2x.png")
 	
 	// create view controllers for necessary views
 	var optionsViewController = ScrapsOptionsViewController()
@@ -29,10 +48,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 		
 		// handle sizing and background color of collectionView
 		self.view.backgroundColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.00)
-		
-		// constants just to store these oft-used values
-		SCREEN_HEIGHT = self.view.frame.size.height
-		SCREEN_WIDTH = self.view.frame.size.width
+
 		
 		// scrollview to allow for pull to side interactions
 		outerScrollView = UIScrollView(frame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT))
@@ -111,6 +127,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 	func animationControllerForDismissedController(dismissed: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
 		return ScrapsViewControllerPresentTransition()
 	}
-	
+	*/
 }
 
