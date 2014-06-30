@@ -11,4 +11,8 @@ import UIKit
 
 class ScrapsOptionsViewController: UIViewController {
 	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		self.view.backgroundColor = UIColor.redColor()
+	}
 }

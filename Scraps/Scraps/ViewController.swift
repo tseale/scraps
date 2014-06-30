@@ -19,6 +19,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 	let pullLeftToRevealStats = ScrapsPullMenuView(direction: "left", imageName: "859-bar-chart@2x.png")
 	let pullRightToRevealOptions = ScrapsPullMenuView(direction: "right", imageName: "740-gear@2x.png")
 	
+	// create view controllers for necessary views
 	var optionsViewController = ScrapsOptionsViewController()
 	var collectionViewController = ScrapsCollectionViewController()
 	var statsViewController = ScrapsStatsViewController()
@@ -42,11 +43,20 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 		outerScrollView.delegate=self
 		self.view.addSubview(outerScrollView)
 		
+		optionsViewController = ScrapsOptionsViewController()
+		optionsViewController.transitioningDelegate = self
+		optionsViewController.modalPresentationStyle = UIModalPresentationStyle.Custom
+		
 		// create view controller for collection layout
 		collectionViewController = ScrapsCollectionViewController(collectionViewLayout: ScrapsCollectionViewFlowLayout())
 		collectionViewController.view.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
-		// add the collection view controller to parent
-		self.addChildViewController(collectionViewController)
+		
+		statsViewController = ScrapsStatsViewController()
+		
+		// add the view controllers to parent
+		//self.addChildViewController(optionsViewController)
+		//self.addChildViewController(collectionViewController)
+		//self.addChildViewController(statsViewController)
 		
 		
 		// add views for pull controls to outer scroll view
@@ -78,10 +88,28 @@ class ViewController: UIViewController, UIScrollViewDelegate, UIViewControllerTr
 	}
 	
 	func scrollViewDidEndDragging(scrollView: UIScrollView!, willDecelerate decelerate: Bool) {
+		if (pullRightToRevealOptions.progress>=1.0) {
+			let screenshot = UIScreen.mainScreen().snapshotViewAfterScreenUpdates(false)
+			self.view.addSubview(screenshot)
+			self.presentViewController(optionsViewController, animated: true, completion: nil)
+		}
+		if (pullLeftToRevealStats.progress>=1.0) {
+			self.presentViewController(statsViewController, animated: true, completion: nil)
+		}
 		pullRightToRevealOptions.progress = (-1*scrollView.contentOffset.x/90)
 		pullLeftToRevealStats.progress = (scrollView.contentOffset.x/90)
 		pullRightToRevealOptions.updateProgressCircle()
 		pullLeftToRevealStats.updateProgressCircle()
+	}
+	
+	func animationControllerForPresentedController(presented: UIViewController!,
+		presentingController presenting: UIViewController!,
+		sourceController source: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
+				return ScrapsViewControllerPresentTransition()
+	}
+	
+	func animationControllerForDismissedController(dismissed: UIViewController!) -> UIViewControllerAnimatedTransitioning! {
+		return ScrapsViewControllerPresentTransition()
 	}
 	
 }

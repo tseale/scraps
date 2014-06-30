@@ -21,7 +21,7 @@ class ScrapsPullMenuView: UIView {
 	
 	var popped: Bool = Bool()
 	
-	var progress: CGFloat = 1.0
+	var progress: CGFloat = 0.0
 	
 	init (direction: String, imageName: String) {
 		super.init(frame: CGRect())
