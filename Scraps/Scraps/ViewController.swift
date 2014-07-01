@@ -13,9 +13,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 	
 	var outerScrollView: UIScrollView = UIScrollView()
 	
-	var optionsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsOptionsViewController(), leftImage: nil, rightImage: nil)
-	var collectionViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsCollectionViewController(collectionViewLayout: ScrapsCollectionViewFlowLayout()), leftImage: nil, rightImage: nil)
-	var statsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsStatsViewController(), leftImage: nil, rightImage: nil)
+	var optionsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsOptionsViewController(), leftImage: "859-bar-chart@2x.png", rightImage:  nil)
+	var collectionViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsCollectionViewController(collectionViewLayout: ScrapsCollectionViewFlowLayout()), leftImage: "859-bar-chart@2x.png", rightImage: "740-gear@2x.png")
+	var statsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsStatsViewController(), leftImage: nil, rightImage: "859-bar-chart@2x.png")
 	
 	override func viewDidLoad() {
 		outerScrollView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
@@ -32,6 +32,23 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 		outerScrollView.addSubview(collectionViewController.view)
 		outerScrollView.addSubview(statsViewController.view)
 		self.view.addSubview(outerScrollView)
+		
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: "shiftRight", name: "shiftRight", object: nil)
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: "shiftLeft", name: "shiftLeft", object: nil)
+
+		
+	}
+	
+	func shiftRight() {
+		var newScrollViewPosition = outerScrollView.contentOffset
+		newScrollViewPosition.x -= SCREEN_WIDTH
+		outerScrollView.setContentOffset(newScrollViewPosition, animated: true)
+	}
+	
+	func shiftLeft() {
+		var newScrollViewPosition = outerScrollView.contentOffset
+		newScrollViewPosition.x += SCREEN_WIDTH
+		outerScrollView.setContentOffset(newScrollViewPosition, animated: true)
 	}
 	
 	/*

@@ -19,11 +19,12 @@ class ScrapsPullMenuView: UIView {
 	let clockWiseProgress: Bool = Bool()
 	var	endAngle: CGFloat = CGFloat()
 	
-	var popped: Bool = Bool()
+	var popped: Bool = false
+	var created: Bool = false
 	
 	var progress: CGFloat = 0.0
 	
-	init (direction: String, imageName: String) {
+	init (direction: String) {
 		super.init(frame: CGRect())
 		switch direction {
 			case "left":
@@ -36,15 +37,15 @@ class ScrapsPullMenuView: UIView {
 				println("ERROR: MUST SUPPLY DIRECTION")
 				clockWiseProgress=true
 		}
-		
-		popped=false
-		
+	}
+	
+	func addImage(imageName: String!) {
+		created = true
 		// create the image object and size the image view based on the image dimensions
 		let elementImage = UIImage(named:imageName).imageWithRenderingMode(.AlwaysTemplate)
-
+		
 		// size the view based on image dimensions
 		self.bounds.size = CGSizeMake(elementImage.size.width, elementImage.size.height)
-		image = UIImageView()
 		image.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds))
 		image.bounds.size = CGSizeMake(elementImage.size.width,elementImage.size.height)
 		image.image = elementImage
@@ -54,13 +55,13 @@ class ScrapsPullMenuView: UIView {
 		let progressCircleCenter = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
 		let progressCircleRadius = 25.0;
 		let progressCirclePath = UIBezierPath(arcCenter:progressCircleCenter,
-												 radius:progressCircleRadius,
-											 startAngle:-M_PI/2,
-											   endAngle:endAngle,
-											  clockwise:clockWiseProgress)
+			radius:progressCircleRadius,
+			startAngle:-M_PI/2,
+			endAngle:endAngle,
+			clockwise:clockWiseProgress)
 		// configure the layer that will display the progress circle element
 		progressCircleLayer.strokeStart=0.0
-		progressCircleLayer.strokeEnd=1.0
+		progressCircleLayer.strokeEnd=progress
 		progressCircleLayer.path = progressCirclePath.CGPath
 		progressCircleLayer.strokeColor = UIColor.lightGrayColor().CGColor
 		progressCircleLayer.fillColor = UIColor.clearColor().CGColor

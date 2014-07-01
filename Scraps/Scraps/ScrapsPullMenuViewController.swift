@@ -11,28 +11,83 @@ import UIKit
 
 class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
 	
-	var outerScrollView: UIScrollView = UIScrollView() // allows for pulling motion
-	var innerViewController: UIViewController = UIViewController()
-	var pullDirections: String = String() // which direction the controllers can be pulled in
+	var pullScrollView = UIScrollView()
+	
+	var innerViewController = UIViewController()
+	
+	var leftPullOption = ScrapsPullMenuView(direction: "left")
+	var rightPullOption = ScrapsPullMenuView(direction: "right")
+	
+	var screenShot = UIView()
 	
 	init(viewController: UIViewController, leftImage: String!, rightImage: String!) {
 		super.init(coder: nil)
 		innerViewController = viewController
+		if leftImage {leftPullOption.addImage(leftImage)}
+		if rightImage {rightPullOption.addImage(rightImage)}
 	}
 	
 	override func viewDidLoad() {
-		outerScrollView.frame = FULL_SCREEN
-		outerScrollView.alwaysBounceHorizontal = true
-		outerScrollView.showsHorizontalScrollIndicator = false
-		outerScrollView.showsVerticalScrollIndicator = false
-		outerScrollView.directionalLockEnabled = true
-		outerScrollView.userInteractionEnabled = true
-		outerScrollView.scrollEnabled = true
-		outerScrollView.delegate=self
-		outerScrollView.backgroundColor = UIColor.clearColor()
+		pullScrollView.frame = FULL_SCREEN
+		pullScrollView.alwaysBounceHorizontal = true
+		pullScrollView.showsHorizontalScrollIndicator = false
+		pullScrollView.showsVerticalScrollIndicator = false
+		pullScrollView.directionalLockEnabled = true
+		pullScrollView.userInteractionEnabled = true
+		pullScrollView.scrollEnabled = true
+		pullScrollView.delegate=self
+		pullScrollView.backgroundColor = UIColor.clearColor()
+		
+		leftPullOption.center = CGPointMake(CGRectGetMaxX(pullScrollView.frame)+40, CGRectGetMidY(pullScrollView.frame)-leftPullOption.bounds.size.height/2-20)
+		pullScrollView.addSubview(leftPullOption)
+		
+		rightPullOption.center = CGPointMake(CGRectGetMinX(pullScrollView.frame)-40, CGRectGetMidY(pullScrollView.frame)-rightPullOption.bounds.size.height/2-20)
+		pullScrollView.addSubview(rightPullOption)
 		
 		innerViewController.view.frame = FULL_SCREEN
-		outerScrollView.addSubview(innerViewController.view)
-		self.view.addSubview(outerScrollView)
+		pullScrollView.addSubview(innerViewController.view)
+		self.view.addSubview(pullScrollView)
+	}
+	
+	func scrollViewDidScroll(scrollView: UIScrollView!) {
+		if scrollView.contentOffset.x<0 {
+			rightPullOption.progress = (-1*scrollView.contentOffset.x/90)
+			if (rightPullOption.progress<=1.1 && rightPullOption.progress>=0.0) {
+				rightPullOption.updateProgressCircle()
+			}
+		}
+		else if (scrollView.contentOffset.x>0) {
+			leftPullOption.progress = (scrollView.contentOffset.x/90)
+			if (leftPullOption.progress<=1.1 && leftPullOption.progress>0.0) {
+				leftPullOption.updateProgressCircle()
+			}
+		}
+	}
+	
+	func scrollViewDidEndDragging(scrollView: UIScrollView!, willDecelerate decelerate: Bool) {
+		if (rightPullOption.created) && (rightPullOption.progress>=1.0){
+			screenShot = UIScreen.mainScreen().snapshotViewAfterScreenUpdates(false)
+			self.view.addSubview(screenShot)
+			NSNotificationCenter.defaultCenter().postNotificationName("shiftRight", object: nil)
+			self.performClosureAfterDelay(1, block: {
+				self.screenShot.removeFromSuperview()
+			})
+		}
+		if (leftPullOption.created) && (leftPullOption.progress>=1.0) {
+			screenShot = UIScreen.mainScreen().snapshotViewAfterScreenUpdates(false)
+			self.view.addSubview(screenShot)
+			NSNotificationCenter.defaultCenter().postNotificationName("shiftLeft", object: nil)
+			self.performClosureAfterDelay(1, block: {
+				self.screenShot.removeFromSuperview()
+			})
+		}
+		rightPullOption.progress = (-1*scrollView.contentOffset.x/90)
+		leftPullOption.progress = (scrollView.contentOffset.x/90)
+		rightPullOption.updateProgressCircle()
+		leftPullOption.updateProgressCircle()
+	}
+	
+	func removeScreenshot() {
+		screenShot.removeFromSuperview()
 	}
 }
