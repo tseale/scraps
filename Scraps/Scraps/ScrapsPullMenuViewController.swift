@@ -56,7 +56,8 @@ class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
 				rightPullOption.updateProgressCircle()
 			}
 		}
-		else if (scrollView.contentOffset.x>0) {
+		
+		if scrollView.contentOffset.x>0 {
 			leftPullOption.progress = (scrollView.contentOffset.x/90)
 			if (leftPullOption.progress<=1.1 && leftPullOption.progress>0.0) {
 				leftPullOption.updateProgressCircle()
@@ -65,7 +66,7 @@ class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
 	}
 	
 	func scrollViewDidEndDragging(scrollView: UIScrollView!, willDecelerate decelerate: Bool) {
-		if (rightPullOption.created) && (rightPullOption.progress>=1.0){
+		if rightPullOption.created && rightPullOption.progress>=1.0{
 			screenShot = UIScreen.mainScreen().snapshotViewAfterScreenUpdates(false)
 			self.view.addSubview(screenShot)
 			NSNotificationCenter.defaultCenter().postNotificationName("shiftRight", object: nil)
@@ -73,7 +74,7 @@ class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
 				self.screenShot.removeFromSuperview()
 			})
 		}
-		if (leftPullOption.created) && (leftPullOption.progress>=1.0) {
+		if leftPullOption.created && leftPullOption.progress>=1.0 {
 			screenShot = UIScreen.mainScreen().snapshotViewAfterScreenUpdates(false)
 			self.view.addSubview(screenShot)
 			NSNotificationCenter.defaultCenter().postNotificationName("shiftLeft", object: nil)
@@ -87,7 +88,4 @@ class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
 		leftPullOption.updateProgressCircle()
 	}
 	
-	func removeScreenshot() {
-		screenShot.removeFromSuperview()
-	}
 }

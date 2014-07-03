@@ -29,10 +29,10 @@ class ScrapsPullMenuView: UIView {
 		switch direction {
 			case "left":
 				clockWiseProgress=false
-				endAngle = -5*M_PI/2
+				endAngle = -5*(M_PI/2)
 			case "right":
 				clockWiseProgress=true
-				endAngle = 3*M_PI/2
+				endAngle = 3*(M_PI/2)
 			default:
 				println("ERROR: MUST SUPPLY DIRECTION")
 				clockWiseProgress=true

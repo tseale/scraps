@@ -56,12 +56,47 @@ class ScrapsCollectionViewController: UICollectionViewController, UICollectionVi
 	
 	override func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
 		if indexPath.row < (canvasObjects.count-1) {
+			let canvasCellLongPress = UILongPressGestureRecognizer(target: self, action: "canvasCellLongPress:")
+			canvasCellLongPress.minimumPressDuration = 0.3
 			let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CanvasCell", forIndexPath: indexPath) as ScrapsCanvasCell
+			cell.addGestureRecognizer(canvasCellLongPress)
 			return cell
 		}else{
 			let cell = collectionView.dequeueReusableCellWithReuseIdentifier("AddCanvasCell", forIndexPath: indexPath) as ScrapsAddCanvasCell
 			return cell
 		}
-		//cell.layer.shadowPath = [UIBezierPath bezierPathWithRect:viewCheck.bounds].CGPath;
+	}
+	
+	func canvasCellLongPress(recognizer: UILongPressGestureRecognizer) {
+		let cell: ScrapsCanvasCell = recognizer.view as ScrapsCanvasCell
+		switch recognizer.state {
+			case .Began:
+				cell.increaseProgress()
+			case .Ended:
+				if cell.showOptions {
+					cell.border.removeFromSuperlayer()
+					let canvasViewController: ScrapsCanvasViewController = ScrapsCanvasViewController()
+					self.addChildViewController(canvasViewController)
+					canvasViewController.canvasPreview = UIView(frame: self.collectionView.convertRect(cell.frame, toView: self.view))
+					self.view.addSubview(canvasViewController.view)
+					canvasViewController.transitionIntoOptionsView()
+				}else{
+					cell.reduceProgress()
+				}
+			default:
+				if !CGRectContainsPoint(recognizer.view.bounds, recognizer.locationInView(cell)) {
+					cell.reduceProgress()
+				}
+		}
+	}
+	
+	override func collectionView(collectionView: UICollectionView!, didSelectItemAtIndexPath indexPath: NSIndexPath!) {
+		let cell: ScrapsCanvasCell = collectionView.cellForItemAtIndexPath(indexPath) as ScrapsCanvasCell
+		let canvasViewController: ScrapsCanvasViewController = ScrapsCanvasViewController()
+		self.addChildViewController(canvasViewController)
+		canvasViewController.canvasPreview = UIView(frame: self.collectionView.convertRect(cell.frame, toView: self.view))
+		self.view.addSubview(canvasViewController.view)
+		canvasViewController.transitionIntoEditView()
+		
 	}
 }
