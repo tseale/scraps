@@ -15,3 +15,8 @@ let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
 
 // just makes it easier to display a view full screen
 let FULL_SCREEN = CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT)
+
+// Colors
+let BLUE_COLOR = UIColor(red:0.20, green:0.67, blue:0.86, alpha:1.00)
+let GREEN_COLOR = UIColor(red:0.30, green:0.85, blue:0.39, alpha:1.00)
+let DARK_GRAY_COLOR = UIColor(red:0.56, green:0.56, blue:0.58, alpha:1.00)

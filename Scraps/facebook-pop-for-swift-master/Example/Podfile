@@ -1,0 +1,4 @@
+
+xcodeproj 'Example.xcodeproj'
+
+pod 'pop', '~> 1.0.6'

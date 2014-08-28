@@ -11,13 +11,14 @@ import UIKit
 import QuartzCore
 
 class ScrapsCanvasCell: UICollectionViewCell {
+	required init(coder: NSCoder) {fatalError("NSCoding not supported")}
 	
 	var borderPath = UIBezierPath()
 	let border: CAShapeLayer = CAShapeLayer()
 	
-	var showOptions: Bool = false
+	var isSelected: Bool = false
 	
-	init(frame: CGRect) {
+	override init(frame: CGRect) {
 		super.init(frame: CGRect())
 		self.bounds.size = CGSizeMake(92,162)
 		self.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)
@@ -37,16 +38,16 @@ class ScrapsCanvasCell: UICollectionViewCell {
 		border.lineWidth = 2.0
 	}
 	
-	func increaseProgress() {
+	func makeSelected() {
 		self.layer.addSublayer(border)
 		popCanvas()
-		showOptions=true
+		isSelected=true
 	}
 	
-	func reduceProgress() {
+	func makeUnSelected() {
 		border.removeFromSuperlayer()
-		if showOptions {self.popCanvas()}
-		showOptions = false
+		popCanvas()
+		isSelected = false
 	}
 	
 	func popCanvas() {

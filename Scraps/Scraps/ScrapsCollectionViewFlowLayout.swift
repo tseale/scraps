@@ -10,9 +10,11 @@ import Foundation
 import UIKit
 
 class ScrapsCollectionViewFlowLayout: UICollectionViewFlowLayout {
-	init() {
+	required init(coder: NSCoder) {fatalError("NSCoding not supported")}
+	
+	override init() {
 		super.init()
 		self.itemSize = CGSizeMake(92, 162)
-		self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
+		self.sectionInset = UIEdgeInsetsMake(10,10,90,10)
 	}
 }

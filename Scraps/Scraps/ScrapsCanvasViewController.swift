@@ -30,9 +30,13 @@ class ScrapsCanvasViewController: UIViewController {
 		self.view.addSubview(blurredBackground)
 		
 		canvasScrollView.frame = CGRectMake(0, 30, SCREEN_WIDTH, 2*SCREEN_HEIGHT/3)
+		let scrollWidth = 2*SCREEN_WIDTH/6+(3*(2*SCREEN_WIDTH/3)+2*(SCREEN_WIDTH/12))
+		canvasScrollView.contentSize = CGSizeMake(scrollWidth, 2*SCREEN_HEIGHT/3)
+		canvasScrollView.contentOffset = CGPointMake(0, 0)
 		canvasScrollView.pagingEnabled = true
-		canvasScrollView.backgroundColor = UIColor.redColor()
-		//self.view.addSubview(canvasScrollView)
+		canvasScrollView.showsHorizontalScrollIndicator = false
+		canvasScrollView.alpha = 0.0
+		self.view.addSubview(canvasScrollView)
 		
 		let exitTap = UITapGestureRecognizer(target: self, action: "exitView")
 		exitTap.numberOfTapsRequired = 1
@@ -132,6 +136,7 @@ class ScrapsCanvasViewController: UIViewController {
 					animations: {
 						self.messageButton.alpha = 1.0
 						self.deleteButton.alpha = 1.0
+						self.canvasScrollView.alpha = 1.0
 					},
 					completion: {(value: Bool) in})
 			})

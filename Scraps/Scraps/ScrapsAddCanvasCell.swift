@@ -10,10 +10,11 @@ import Foundation
 import UIKit
 
 class ScrapsAddCanvasCell: UICollectionViewCell {
-	init(frame: CGRect) {
+	required init(coder: NSCoder) {fatalError("NSCoding not supported")}
+	override init(frame: CGRect) {
 		super.init(frame: CGRect())
 		self.bounds.size = CGSizeMake(92,162)
-		self.backgroundColor=UIColor.lightGrayColor()
+		self.backgroundColor=BLUE_COLOR
 		self.layer.cornerRadius=2
 		
 		self.layer.shadowOffset = CGSizeMake(0.0,-1.5)

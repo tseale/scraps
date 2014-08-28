@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
+	required init(coder: NSCoder) {fatalError("NSCoding not supported")}
 	
 	var pullScrollView = UIScrollView()
 	
@@ -25,6 +26,9 @@ class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
 		innerViewController = viewController
 		if leftImage {leftPullOption.addImage(leftImage)}
 		if rightImage {rightPullOption.addImage(rightImage)}
+		
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: "enableScrolling", name: "enableScroll", object: nil)
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: "disableScrolling", name: "disableScroll", object: nil)
 	}
 	
 	override func viewDidLoad() {
@@ -38,10 +42,10 @@ class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
 		pullScrollView.delegate=self
 		pullScrollView.backgroundColor = UIColor.clearColor()
 		
-		leftPullOption.center = CGPointMake(CGRectGetMaxX(pullScrollView.frame)+40, CGRectGetMidY(pullScrollView.frame)-leftPullOption.bounds.size.height/2-20)
+		leftPullOption.center = CGPointMake(CGRectGetMaxX(pullScrollView.frame)+40, CGRectGetMidY(pullScrollView.frame)-leftPullOption.bounds.size.height/2-15)
 		pullScrollView.addSubview(leftPullOption)
 		
-		rightPullOption.center = CGPointMake(CGRectGetMinX(pullScrollView.frame)-40, CGRectGetMidY(pullScrollView.frame)-rightPullOption.bounds.size.height/2-20)
+		rightPullOption.center = CGPointMake(CGRectGetMinX(pullScrollView.frame)-40, CGRectGetMidY(pullScrollView.frame)-rightPullOption.bounds.size.height/2-15)
 		pullScrollView.addSubview(rightPullOption)
 		
 		innerViewController.view.frame = FULL_SCREEN
@@ -86,6 +90,14 @@ class ScrapsPullMenuViewController: UIViewController, UIScrollViewDelegate {
 		leftPullOption.progress = (scrollView.contentOffset.x/90)
 		rightPullOption.updateProgressCircle()
 		leftPullOption.updateProgressCircle()
+	}
+	
+	func disableScrolling() {
+		pullScrollView.scrollEnabled = false
+	}
+	
+	func enableScrolling() {
+		pullScrollView.scrollEnabled = true
 	}
 	
 }

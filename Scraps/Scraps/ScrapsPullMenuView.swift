@@ -12,6 +12,10 @@ import QuartzCore
 
 class ScrapsPullMenuView: UIView {
 	
+	required init(coder: NSCoder) {
+		fatalError("NSCoding not supported")
+	}
+	
 	let image: UIImageView = UIImageView()
 	var direction: String = String()
 	
@@ -29,10 +33,10 @@ class ScrapsPullMenuView: UIView {
 		switch direction {
 			case "left":
 				clockWiseProgress=false
-				endAngle = -5*(M_PI/2)
+				endAngle = CGFloat(-5*(M_PI/2))
 			case "right":
 				clockWiseProgress=true
-				endAngle = 3*(M_PI/2)
+				endAngle = CGFloat(3*(M_PI/2))
 			default:
 				println("ERROR: MUST SUPPLY DIRECTION")
 				clockWiseProgress=true
@@ -53,10 +57,10 @@ class ScrapsPullMenuView: UIView {
 		
 		// set up pull progress circle element
 		let progressCircleCenter = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
-		let progressCircleRadius = 25.0;
+		let progressCircleRadius = 30.0;
 		let progressCirclePath = UIBezierPath(arcCenter:progressCircleCenter,
-			radius:progressCircleRadius,
-			startAngle:-M_PI/2,
+			radius:CGFloat(progressCircleRadius),
+			startAngle:CGFloat(-1*(M_PI/2)),
 			endAngle:endAngle,
 			clockwise:clockWiseProgress)
 		// configure the layer that will display the progress circle element

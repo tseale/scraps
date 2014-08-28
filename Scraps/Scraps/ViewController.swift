@@ -13,9 +13,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 	
 	var outerScrollView: UIScrollView = UIScrollView()
 	
-	var optionsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsOptionsViewController(), leftImage: "859-bar-chart@2x.png", rightImage:  nil)
-	var collectionViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsCollectionViewController(collectionViewLayout: ScrapsCollectionViewFlowLayout()), leftImage: "859-bar-chart@2x.png", rightImage: "740-gear@2x.png")
-	var statsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsStatsViewController(), leftImage: nil, rightImage: "859-bar-chart@2x.png")
+	var optionsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsOptionsViewController(), leftImage: "collection-view@2x.png", rightImage:  nil)
+	var collectionViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsCollectionViewController(collectionViewLayout: ScrapsCollectionViewFlowLayout()), leftImage: nil, rightImage: "740-gear@2x.png")
+	//var statsViewController: ScrapsPullMenuViewController = ScrapsPullMenuViewController(viewController: ScrapsStatsViewController(), leftImage: nil, rightImage: "collection-view@2x.png")
 	
 	override func viewDidLoad() {
 		outerScrollView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
@@ -26,10 +26,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 		
 		optionsViewController.view.frame.origin = CGPointMake(0, 0)
 		collectionViewController.view.frame.origin = CGPointMake(SCREEN_WIDTH, 0)
-		statsViewController.view.frame.origin = CGPointMake(2*SCREEN_WIDTH, 0)
+		//statsViewController.view.frame.origin = CGPointMake(2*SCREEN_WIDTH, 0)
 		outerScrollView.addSubview(optionsViewController.view)
 		outerScrollView.addSubview(collectionViewController.view)
-		outerScrollView.addSubview(statsViewController.view)
+		//outerScrollView.addSubview(statsViewController.view)
 		self.view.addSubview(outerScrollView)
 		
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: "shiftRight", name: "shiftRight", object: nil)
